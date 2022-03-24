@@ -11,6 +11,8 @@ import UIKit
 final class MyView: UIView {
     let vc: UIViewController
     
+    //weak var vc: UIViewController?
+    
     init(vc: UIViewController) {
         self.vc = vc
         super.init(frame: .zero)

@@ -18,5 +18,7 @@ final class SecondVC: UIViewController {
         myView = MyView(vc: self)
     }
     
+    //Algun cambio
+    
     
 }

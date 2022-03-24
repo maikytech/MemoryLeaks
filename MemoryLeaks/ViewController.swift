@@ -8,9 +8,23 @@
 import UIKit
 
 final class ViewController: UIViewController {
+    
+    var dogInstance: Dog?
+    var ownerInstance: Owner?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupButton()
+        retainCicle()
+    }
+    
+    @objc private func didTapButton() {
+        let vc = SecondVC()
+        present(vc, animated: true)
+    }
+    
+    private func setupButton() {
         
         let button = UIButton()
         button.setTitle("Tap Me", for: .normal)
@@ -22,11 +36,17 @@ final class ViewController: UIViewController {
         view.addSubview(button)
     }
     
-    @objc private func didTapButton() {
-        let vc = SecondVC()
-        present(vc, animated: true)
+    private func retainCicle() {
+        dogInstance = Dog(name: "Chimuelo", owner: nil)
+        ownerInstance = Owner(name: "Isabela", dog: nil)
         
+        dogInstance?.owner = ownerInstance
+        ownerInstance?.dog = dogInstance
+        
+        ownerInstance = nil
+        dogInstance = nil
     }
-
-
 }
+
+
+

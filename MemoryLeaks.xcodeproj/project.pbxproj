@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65202B1927ECC8C2007E707A /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65202B1827ECC8C2007E707A /* Dog.swift */; };
+		65202B1B27ECC8D4007E707A /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65202B1A27ECC8D4007E707A /* Owner.swift */; };
 		652D64E127E0D2ED00E707AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D64E027E0D2ED00E707AB /* AppDelegate.swift */; };
 		652D64E327E0D2ED00E707AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D64E227E0D2ED00E707AB /* SceneDelegate.swift */; };
 		652D64E527E0D2ED00E707AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D64E427E0D2ED00E707AB /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65202B1827ECC8C2007E707A /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		65202B1A27ECC8D4007E707A /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		652D64DD27E0D2ED00E707AB /* MemoryLeaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryLeaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		652D64E027E0D2ED00E707AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		652D64E227E0D2ED00E707AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65202B1627ECC86C007E707A /* RetainCycle */ = {
+			isa = PBXGroup;
+			children = (
+				65202B1827ECC8C2007E707A /* Dog.swift */,
+				65202B1A27ECC8D4007E707A /* Owner.swift */,
+			);
+			path = RetainCycle;
+			sourceTree = "<group>";
+		};
+		65202B1727ECC897007E707A /* Leaks */ = {
+			isa = PBXGroup;
+			children = (
+				652D64F427E0ECC300E707AB /* SecondVC.swift */,
+				652D64F627E0F08800E707AB /* MyView.swift */,
+			);
+			path = Leaks;
+			sourceTree = "<group>";
+		};
 		652D64D427E0D2ED00E707AB = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +82,11 @@
 		652D64DF27E0D2ED00E707AB /* MemoryLeaks */ = {
 			isa = PBXGroup;
 			children = (
+				65202B1727ECC897007E707A /* Leaks */,
+				65202B1627ECC86C007E707A /* RetainCycle */,
 				652D64E027E0D2ED00E707AB /* AppDelegate.swift */,
 				652D64E227E0D2ED00E707AB /* SceneDelegate.swift */,
 				652D64E427E0D2ED00E707AB /* ViewController.swift */,
-				652D64F427E0ECC300E707AB /* SecondVC.swift */,
-				652D64F627E0F08800E707AB /* MyView.swift */,
 				652D64E627E0D2ED00E707AB /* Main.storyboard */,
 				652D64E927E0D2EF00E707AB /* Assets.xcassets */,
 				652D64EB27E0D2EF00E707AB /* LaunchScreen.storyboard */,
@@ -146,6 +168,8 @@
 			files = (
 				652D64E527E0D2ED00E707AB /* ViewController.swift in Sources */,
 				652D64E127E0D2ED00E707AB /* AppDelegate.swift in Sources */,
+				65202B1B27ECC8D4007E707A /* Owner.swift in Sources */,
+				65202B1927ECC8C2007E707A /* Dog.swift in Sources */,
 				652D64F727E0F08800E707AB /* MyView.swift in Sources */,
 				652D64F527E0ECC300E707AB /* SecondVC.swift in Sources */,
 				652D64E327E0D2ED00E707AB /* SceneDelegate.swift in Sources */,
